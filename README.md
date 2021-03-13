@@ -1,4 +1,4 @@
-# Samcart Coding Challenge
+# SamCart Coding Challenge
 
 
 ## Requirements
@@ -10,4 +10,4 @@
 ## Setup
 
 
-## Testing
+## Testing  
