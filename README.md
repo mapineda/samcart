@@ -1,13 +1,21 @@
 # SamCart Coding Challenge
 
 
-## Requirements
+## Requirements:
+- npm
 - node.js
 - express
 - docker
 - react
 
-## Setup
+## Packages Used:
+- express
+- mongoose
+- bodyparser
+- cors
+- nanoid
+
+## Setup:
 
 
-## Testing  
+## Testing:  
