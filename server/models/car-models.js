@@ -1,18 +1,18 @@
-import mongoose from 'mongoose';
-import { nanoid } from 'nanoid';
+const mongoose = require('mongoose');
+const { nanoid } = require('nanoid');
 
 const Schema = mongoose.Schema;
 
 const Car = new Schema(
     {
-        make: {type: String, required: true },
-        model: {type: String, required: true },
-        package: {type: String, required: true },
-        color: {type: String, required: true },
-        year: {type: Date, required: true },
-        category: {type: String, required: true},
-        mileage: {type: Number, required: true},
-        price: {type: Number, required: true},
+        make: {type: String },
+        model: {type: String },
+        package: {type: String },
+        color: {type: String },
+        year: {type: String },
+        category: {type: String },
+        mileage: {type: Number },
+        price: {type: Number },
         id: {type: String, unique: true, default: nanoid(8)}
     },
     { timestamps: true },
