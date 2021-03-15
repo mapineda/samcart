@@ -2,19 +2,19 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-
 const db = require('./db')
 const carRouter = require('./routes/car-router')
 
 // init the app
 const app = express();
 // assign server port
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
 app.use(bodyParser.json());
 
+// connect to db
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 // idx route
