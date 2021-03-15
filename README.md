@@ -7,6 +7,9 @@
 - docker
 - react
 
+## Optional 
+- [insomnia]('https://insomnia.rest/')
+
 ## Packages Used:
 - express
 - mongoose
@@ -30,7 +33,9 @@ If i did get mongo image seeded, then one would:
 
 2. Run `docker-compose up`
 
-3. Navigate to localhost:3000
+3. Navigate to localhost:3000 to see application
+
+4. navigate to http://localhost:3000/cars/list to see all cars
 
 ## User Testing:
 
@@ -46,5 +51,18 @@ server should be running on localhost:5000
 client should be running on localhost:3000
 
 5. navigate to localhost:3000 to see application
+6. navigate to http://localhost:3000/cars/list to see all cars
+7. click *update* button on table to get car by id 
 
+### Additional Resources:
+- I've included my insomnia worspace in json form for easy CRUD requests
 
+### What I learned:
+- learned that I have to relearn the MERN environment after being at a python/django shop for 3 yrs
+
+### What I would improve for next time:
+- add automated testing
+- Seed the mongo db image
+- Styling
+- Add delete to front-end
+- add env-var file
