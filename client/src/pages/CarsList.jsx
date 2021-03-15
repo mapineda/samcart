@@ -32,25 +32,6 @@ class UpdateCar extends Component {
     }
 }
 
-class DeleteCar extends Component {
-    deleteUser = event => {
-        event.preventDefault()
-
-        if (
-            window.confirm(
-                `Do you want to delete the car ${this.props.id} permanently?`,
-            )
-        ) {
-            api.deleteCarById(this.props.id)
-            window.location.reload()
-        }
-    }
-
-    render() {
-        return <Delete onClick={this.deleteUser}>Delete</Delete>
-    }
-}
-
 class CarsList extends Component {
     constructor(props) {
         super(props)
