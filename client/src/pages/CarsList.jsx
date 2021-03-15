@@ -111,17 +111,6 @@ class CarsList extends Component {
                 Cell: function(props) {
                     return (
                         <span>
-                            <DeleteCar id={props.original._id} />
-                        </span>
-                    )
-                },
-            },
-            {
-                Header: '',
-                accessor: '',
-                Cell: function(props) {
-                    return (
-                        <span>
                             <UpdateCar id={props.original._id} />
                         </span>
                     )
