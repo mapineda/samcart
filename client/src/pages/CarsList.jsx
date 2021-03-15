@@ -15,11 +15,6 @@ const Update = styled.div`
     cursor: pointer;
 `
 
-const Delete = styled.div`
-    color: #ff0000;
-    cursor: pointer;
-`
-
 class UpdateCar extends Component {
     updateUser = event => {
         event.preventDefault()
@@ -111,7 +106,7 @@ class CarsList extends Component {
                 Cell: function(props) {
                     return (
                         <span>
-                            <UpdateCar id={props.original._id} />
+                            <UpdateCar id={props.original.id} />
                         </span>
                     )
                 },
