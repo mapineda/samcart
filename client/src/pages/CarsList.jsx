@@ -41,7 +41,7 @@ class DeleteCar extends Component {
                 `Do you want to delete the car ${this.props.id} permanently?`,
             )
         ) {
-            api.deleteMovieById(this.props.id)
+            api.deleteCarById(this.props.id)
             window.location.reload()
         }
     }
