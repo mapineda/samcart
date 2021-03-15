@@ -2,8 +2,7 @@ FROM node:14-slim
 
 WORKDIR /usr/src/app
 
-COPY ./package.json ./
-COPY ./package.lock ./
+COPY ./package*.json ./
 
 RUN npm install
 

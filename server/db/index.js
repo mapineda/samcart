@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const connectionUrl = 'mongodb://127.0.0.1:27017/cars';
+// const connectionUrl = 'mongodb://mongo:27017/cars';
 
-const CONNECTION_STRING = 'mongodb+srv://samcart:<password>@cluster0.wfgek.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const connectionUrl = 'mongodb+srv://samcart:tacos123@cluster0.wfgek.mongodb.net/cars?retryWrites=true&w=majority&tlsInsecure=true';
 
 
 mongoose

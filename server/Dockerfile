@@ -1,0 +1,14 @@
+FROM node:13.12.0-alpine
+
+WORKDIR /usr/src/app
+
+# install app dependencies
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 5000
+
+CMD [ "index.js" ]
